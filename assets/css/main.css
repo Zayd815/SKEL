@@ -104,3 +104,57 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Styles pour la page Résultats */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  padding: 20px 0;
+}
+
+.stat-item {
+  text-align: center;
+  background-color: #e9ecef;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.stat-item h3 {
+  font-size: 2.5em;
+  color: #007bff;
+  margin: 0;
+}
+
+.stat-item p {
+  color: #333;
+}
+
+/* Témoignages */
+.testimonial {
+  font-style: italic;
+  background-color: #f4f4f9;
+  padding: 20px;
+  border-left: 5px solid #007bff;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.testimonial cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Call-to-Action */
+.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  text-align: center;
+}
