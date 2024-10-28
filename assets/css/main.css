@@ -4,7 +4,7 @@
   width: 200px;
   height: 100%;
   background-color: #0a2f5a;
-  color: #ffffff;
+  color: #0a2f5a;
   padding-top: 20px;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .sidebar ul li a {
-  color: #ffffff;
+  color: #0a2f5a;
   text-decoration: none;
   padding: 10px 20px;
   display: block;
@@ -39,9 +39,9 @@
   color: #0a2f5a;
 }
 
-.hero h2 {
+.hero p {
   font-size: 1.2em;
-  color: #0a2f5a;
+  color: #333;
   margin-top: 10px;
 }
 
@@ -49,7 +49,7 @@
   display: inline-block;
   padding: 10px 20px;
   background-color: #007bff;
-  color: #ffffff;
+  color: #0a2f5a;
   text-decoration: none;
   border-radius: 5px;
   margin-top: 20px;
