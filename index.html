@@ -1,36 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SKEL - Accélérateur de Croissance</title>
   
-  <!-- Liens CSS principaux -->
-  <link href="assets/css/main.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Lien vers la feuille de style principale -->
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
-
 <body>
-  <!-- Section d'en-tête -->
-  <header>
+
+  <!-- Section Accueil -->
+  <header class="hero">
     <div class="container">
       <h1>Bienvenue chez SKEL</h1>
       <p>De 20k€/mois à 60k€/mois avec la méthode OMNIscale™</p>
-      <a href="#services" class="btn btn-primary">Découvrir notre méthode</a>
+      <a href="#contact" class="btn btn-primary">Réservez un appel</a>
     </div>
   </header>
 
   <!-- Section Méthodologie -->
-  <section id="methodology" class="my-5">
+  <section id="methodology" class="section-bg">
     <div class="container">
       <h2>Notre Méthodologie</h2>
-      <p>La méthode OMNIscale™ est conçue pour propulser votre croissance...</p>
+      <div class="step">
+        <h3>Système d'Offre</h3>
+        <p>Développement d'une offre irrésistible pour vos clients cibles.</p>
+      </div>
+      <div class="step">
+        <h3>Système de Calendrier</h3>
+        <p>Stratégies pour remplir votre calendrier d’appels.</p>
+      </div>
+      <div class="step">
+        <h3>Système de Qualification</h3>
+        <p>Qualification de prospects pour des conversions optimales.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Autres sections -->
-  <!-- Ajoutez d'autres sections comme Résultats, Contact, etc. -->
+  <!-- Section Statistiques Clés -->
+  <section id="stats">
+    <div class="container">
+      <h2>Nos Résultats</h2>
+      <div class="stats">
+        <div class="stat-item">
+          <h3>+20</h3>
+          <p>Agences accompagnées</p>
+        </div>
+        <div class="stat-item">
+          <h3>3,7M€</h3>
+          <p>Générés pour nos clients</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Témoignages -->
+  <section id="testimonials" class="section-bg">
+    <div class="container">
+      <h2>Ce qu'ils disent de nous</h2>
+      <p>“Grâce à SKEL, nous avons transformé notre stratégie d'acquisition en moins de 4 mois !”</p>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contactez-nous</h2>
+      <form action="#">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" required>
+        <label for="email">Email :</label>
+        <input type="email" id="email" required>
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+    </div>
+  </section>
 
 </body>
 </html>
