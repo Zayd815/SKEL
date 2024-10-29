@@ -14,7 +14,7 @@ body {
 /* Styles de navigation */
 header {
     background-color: #f8f9fa;
-    padding: 30px;
+    padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -213,10 +213,4 @@ section p {
 
 .nav-links li {
     margin: 15px 0; /* Adds more space between items */
-}
-
-.nav-links {
-    display: flex;
-    gap: 15px;
-    color: #333; /* ou une autre couleur visible */
 }
