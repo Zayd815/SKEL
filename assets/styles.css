@@ -22,15 +22,14 @@ header {
     width: 100%;
     z-index: 1000;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
     height: 60px;
 }
 
 /* Logo et menu dans une ligne pour PC */
 .logo-container {
-    display: flex;
-    align-items: center;
+    display: none; /* Cache le logo pour la version PC */
 }
 
 .logo {
@@ -144,6 +143,10 @@ header {
 
 /* Styles pour mobile */
 @media (max-width: 768px) {
+    .logo-container {
+        display: block; /* Affiche le logo uniquement sur mobile */
+    }
+
     .logo {
         width: 100px;
     }
