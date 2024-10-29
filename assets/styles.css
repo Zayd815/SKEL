@@ -192,4 +192,25 @@ section p {
     #accueil img {
         width: 200px;
     }
+    
+}
+/* For mobile navigation adjustments */
+.hamburger {
+    font-size: 30px; /* Increase the size of the hamburger icon */
+}
+
+.nav-links {
+    display: none; /* Hides the menu initially */
+    flex-direction: column;
+    align-items: flex-start; /* Aligns items to the left */
+    padding: 20px;
+    font-size: 1.2rem; /* Increases the font size for better spacing */
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.nav-links li {
+    margin: 15px 0; /* Adds more space between items */
 }
