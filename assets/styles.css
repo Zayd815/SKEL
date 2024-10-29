@@ -15,45 +15,68 @@ body {
 /* Styles de navigation */
 header {
     background-color: #f8f9fa;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+    padding: 15px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.logo {
-    width: 120px;
-    margin-right: 20px;
-}
-
-.nav-links {
-    list-style-type: none;
+header .nav-links {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
-.nav-links li {
-    display: inline-block;
-}
-
-.nav-links li a {
+header .nav-links li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
     transition: color 0.3s;
 }
 
-.nav-links li a:hover {
+header .nav-links li a:hover {
     color: #007bff;
 }
 
-/* Carousel section */
+/* Section Accueil */
+#accueil {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e9ecef;
+}
+
+#accueil img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+#accueil h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#accueil p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#accueil button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#accueil button:hover {
+    background-color: #0056b3;
+}
+
+/* Section Trusted Carousel */
 #trusted {
     padding: 40px 20px;
     text-align: center;
@@ -61,65 +84,77 @@ header {
 
 #trusted h2 {
     font-size: 1.8rem;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .trusted-carousel {
     display: flex;
-    gap: 30px;
-    animation: scroll 20s linear infinite; /* Défilement cyclique */
-    white-space: nowrap;
+    gap: 20px;
     overflow: hidden;
+    animation: scroll 15s linear infinite;
 }
 
 .trusted-carousel span {
+    display: inline-block;
     background-color: #f1f1f1;
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
-    display: inline-block;
-    white-space: nowrap;
     min-width: 100px;
+    text-align: center;
 }
 
-/* Animation pour le carousel cyclique */
+/* Animation for infinite carousel */
 @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
-/* Styles pour mobile */
-@media (max-width: 768px) {
-    .logo {
-        width: 100px;
-    }
+/* Sections restantes */
+section {
+    padding: 60px 20px;
+}
 
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+section p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    color: #555;
+}
+
+/* Media queries */
+@media (max-width: 1024px) {
     .nav-links {
         display: none;
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: #f8f9fa;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        padding: 20px;
-        font-size: 1.2rem;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
     }
 
     .hamburger {
         display: block;
+        font-size: 30px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .nav-links.show {
+        display: flex;
+        flex-direction: column;
         position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #f8f9fa;
+        padding: 20px;
     }
 }
