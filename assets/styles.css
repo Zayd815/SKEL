@@ -9,6 +9,7 @@
 body {
     line-height: 1.6;
     color: #333;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
 }
 
 /* Styles de navigation */
@@ -42,13 +43,14 @@ nav ul li a:hover {
 /* Section Accueil */
 #accueil {
     text-align: center;
-    padding: 60px 20px;
+    padding: 40px 20px; /* Réduit la distance entre les sections */
     background-color: #e9ecef;
+    overflow: hidden;
 }
 
 #accueil img {
     width: 250px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #accueil h1 {
@@ -172,7 +174,7 @@ section p {
 @media (max-width: 768px) {
     /* Espacement pour décaler la section accueil vers le bas */
     #accueil {
-        padding-top: 100px;
+        padding-top: 80px;
     }
 
     /* Style pour intégrer le menu avec le header */
@@ -207,7 +209,7 @@ section p {
         font-size: 30px;
         position: absolute;
         top: 15px;
-        right: 20px; /* Alignement à droite pour mobile */
+        right: 20px;
     }
 
     /* Carousel horizontal pour mobile */
