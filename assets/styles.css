@@ -218,6 +218,6 @@ section p {
 @media (max-width: 768px) {
     /* Espace supplémentaire pour la section d'accueil sur mobile */
     #accueil {
-        padding-top: 80px; /* Ajustez la valeur selon vos besoins */
+        padding-top: 40px; /* Ajustez la valeur selon vos besoins */
     }
 }
