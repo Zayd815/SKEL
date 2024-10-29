@@ -15,29 +15,57 @@ body {
 /* Styles de navigation */
 header {
     background-color: #f8f9fa;
-    padding: 15px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
+    width: 100%;
     z-index: 1000;
-}
-
-header .nav-links {
     display: flex;
-    gap: 15px;
+    align-items: center;
+    height: 60px;
 }
 
-header .nav-links li a {
+/* Logo et menu dans une ligne pour PC */
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Place le logo à gauche */
+}
+
+.logo {
+    width: 120px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin-left: 20px; /* Décale le menu à droite du logo */
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
     transition: color 0.3s;
 }
 
-header .nav-links li a:hover {
+.nav-links li a:hover {
     color: #007bff;
+}
+
+/* Hamburger menu - Mobile uniquement */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 /* Section Accueil */
@@ -84,77 +112,76 @@ header .nav-links li a:hover {
 
 #trusted h2 {
     font-size: 1.8rem;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .trusted-carousel {
     display: flex;
-    gap: 20px;
+    gap: 40px;
+    animation: scroll 20s linear infinite; /* Défilement infini */
     overflow: hidden;
-    animation: scroll 15s linear infinite;
+    white-space: nowrap;
 }
 
 .trusted-carousel span {
-    display: inline-block;
     background-color: #f1f1f1;
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
-    min-width: 100px;
-    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
 }
 
-/* Animation for infinite carousel */
+/* Animation Carousel Cyclique */
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.trusted-carousel:hover {
+    animation-play-state: paused; /* Pause l'animation au survol */
+}
+
+/* Styles pour mobile */
+@media (max-width: 768px) {
+    .logo {
+        width: 100px;
     }
-    100% {
-        transform: translateX(-100%);
-    }
-}
 
-/* Sections restantes */
-section {
-    padding: 60px 20px;
-}
-
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-    text-align: center;
-}
-
-section p {
-    max-width: 800px;
-    margin: 0 auto 20px auto;
-    text-align: center;
-    color: #555;
-}
-
-/* Media queries */
-@media (max-width: 1024px) {
     .nav-links {
         display: none;
-    }
-
-    .hamburger {
-        display: block;
-        font-size: 30px;
-        background: none;
-        border: none;
-        cursor: pointer;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #f8f9fa;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px;
+        font-size: 1.2rem;
     }
 
     .nav-links.show {
         display: flex;
-        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
         position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #f8f9fa;
-        padding: 20px;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+
+    #accueil {
+        padding-top: 80px;
+    }
+
+    #trusted {
+        padding: 40px 10px;
     }
 }
