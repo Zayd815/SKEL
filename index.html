@@ -3,30 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SKEL</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <title>SKEL - Prospection Multicanale</title>
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="logo">
-            <img src="assets/logo_skel.png" alt="Logo SKEL">
-        </div>
-        <h1>La prospection multicanale pour des résultats concrets</h1>
-        <a href="#services" class="cta-button">Découvrir nos services</a>
-    </header>
 
-    <!-- Trusted By Section -->
-    <section class="trusted-by">
-        <p class="trusted-text">Nos clients de confiance</p>
-        <div class="carousel">
-            <div class="carousel-item">Nom de l'entreprise</div>
-            <div class="carousel-item">Nom de l'entreprise</div>
-            <div class="carousel-item">Nom de l'entreprise</div>
-            <!-- Répéter autant de fois que nécessaire -->
-        </div>
-    </section>
+<!-- Menu de navigation -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À Propos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#contact">Contactez-nous</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- Sections suivantes... -->
+<!-- Section Accueil avec phrase d'accroche et logo -->
+<section id="accueil">
+    <img src="assets/skel_logo.png" alt="Logo SKEL" style="width: 150px; height: auto;">
+    <h1>La prospection multicanale pour des résultats concrets</h1>
+    <p>Générez plus de leads et atteignez vos objectifs avec <img src="assets/skel_logo.png" alt="Logo SKEL" style="width: 50px; height: auto;"></p>
+    <button onclick="window.location.href='#services'">Découvrir nos services</button>
+</section>
+
+<!-- Section pour les entreprises de confiance -->
+<section id="trusted">
+    <h2>Nos clients de confiance</h2>
+    <div class="trusted-carousel">
+        <span>Nom de l'entreprise</span>
+        <span>Nom de l'entreprise</span>
+        <span>Nom de l'entreprise</span>
+    </div>
+</section>
+
+<!-- Sections restantes -->
+<section id="apropos">
+    <h2>À Propos / Notre Mission</h2>
+    <p>Présentation de l'approche de SKEL, avec les valeurs et engagements.</p>
+</section>
+
+<section id="services">
+    <h2>Nos Services</h2>
+    <p>Description de l'Omniscale et autres services offerts.</p>
+</section>
+
+<section id="clients">
+    <h2>Clients et Témoignages</h2>
+    <p>Liste de témoignages de clients.</p>
+</section>
+
+<section id="contact">
+    <h2>Contactez-nous</h2>
+    <p>Informations de contact et formulaire.</p>
+</section>
+
 </body>
 </html>
