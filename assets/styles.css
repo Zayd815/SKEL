@@ -46,7 +46,6 @@ nav ul li a:hover {
     padding: 60px 20px;
     background-color: #e9ecef;
     overflow: hidden;
-    margin-top: 20px; /* Décale légèrement la section vers le bas */
 }
 
 #accueil img {
@@ -171,20 +170,18 @@ section p {
     }
 }
 
-/* Adaptation du menu et espacement pour mobile */
+/* Adaptation spécifique pour mobile */
 @media (max-width: 768px) {
-    /* Décale la section accueil vers le bas */
-    #accueil {
-        padding-top: 100px;
-    }
-
-    /* Supprime la partie grise sous le header */
+    /* Ajuste le header pour la version mobile seulement */
     header {
-        background-color: #f8f9fa;
+        background-color: #F8F9FA; /* Couleur demandée pour mobile */
         padding: 15px;
         box-shadow: none;
-        position: relative;
-        z-index: 2;
+    }
+
+    /* Ajustement de la section accueil pour réduire l'espacement sur mobile uniquement */
+    #accueil {
+        padding-top: 70px;
     }
 
     .nav-links {
@@ -193,7 +190,7 @@ section p {
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: #ffffff;
+        background-color: #F8F9FA; /* Assure que le menu soit de la même couleur */
         flex-direction: column;
         align-items: flex-start;
         padding: 20px;
