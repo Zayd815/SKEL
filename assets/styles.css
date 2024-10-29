@@ -6,39 +6,54 @@
     font-family: Arial, sans-serif;
 }
 
-html, body {
-    overflow-x: hidden; /* Empêche le défilement horizontal */
+body {
     line-height: 1.6;
     color: #333;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
 }
 
 /* Styles de navigation */
 header {
-    background-color: #F8F9FA; /* Couleur du header */
-    padding: 20px;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-nav ul {
+.logo {
+    width: 100px;
+}
+
+.nav-links {
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    gap: 15px;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
+.nav-links li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
+.nav-links li a:hover {
     color: #007bff;
+}
+
+/* Hamburger menu - Mobile uniquement */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 /* Section Accueil */
@@ -46,12 +61,11 @@ nav ul li a:hover {
     text-align: center;
     padding: 60px 20px;
     background-color: #e9ecef;
-    overflow: hidden;
 }
 
 #accueil img {
     width: 250px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #accueil h1 {
@@ -84,11 +98,6 @@ nav ul li a:hover {
     text-align: center;
 }
 
-#trusted h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-}
-
 .trusted-carousel {
     display: flex;
     justify-content: center;
@@ -101,62 +110,28 @@ nav ul li a:hover {
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
+    white-space: nowrap;
 }
 
-/* Animation for Carousel */
+/* Animation Carousel */
 @keyframes scroll {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
 }
 
-/* Sections restantes */
-section {
-    padding: 60px 20px;
-}
-
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-    text-align: center;
-}
-
-section p {
-    max-width: 800px;
-    margin: 0 auto 20px auto;
-    text-align: center;
-    color: #555;
-}
-
-/* Styles pour le menu classique sur les grands écrans */
-.nav-links {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-}
-
-/* Masquer le menu hamburger par défaut */
-.hamburger {
-    display: none;
-    right: 20px;
-    font-size: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-/* Adaptation du menu pour les écrans plus petits */
-@media (max-width: 1024px) {
+/* Styles pour mobile */
+@media (max-width: 768px) {
     .nav-links {
         display: none;
         flex-direction: column;
+        align-items: flex-start;
+        background-color: #f8f9fa;
         width: 100%;
-        text-align: center;
-        background-color: #F8F9FA;
         position: absolute;
         top: 60px;
         left: 0;
-        z-index: 1;
+        padding: 20px;
+        font-size: 1.2rem;
     }
 
     .nav-links.show {
@@ -169,72 +144,8 @@ section p {
         top: 15px;
         right: 20px;
     }
-}
 
-/* Adaptation spécifique pour mobile */
-@media (max-width: 768px) {
-    /* Ajuste le header pour la version mobile seulement */
-    header {
-        background-color: #F8F9FA; /* Couleur demandée pour mobile */
-        padding: 15px;
-        box-shadow: none;
-    }
-
-    /* Ajustement de la section accueil pour réduire l'espacement sur mobile uniquement */
     #accueil {
-        padding-top: 70px;
-    }
-
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #F8F9FA; /* Assure que le menu soit de la même couleur */
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
-        font-size: 1.2rem;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 15px 0;
-    }
-
-    .hamburger {
-        font-size: 30px;
-        position: absolute;
-        top: 15px;
-        right: 20px;
-    }
-
-    /* Carousel horizontal pour mobile */
-    .trusted-carousel {
-        display: flex;
-        justify-content: flex-start;
-        overflow: hidden;
-        white-space: nowrap;
-        animation: scroll-horizontal 10s linear infinite;
-    }
-
-    .trusted-carousel span {
-        display: inline-block;
-        padding: 10px;
-        margin-right: 20px;
-        white-space: nowrap;
-    }
-
-    @keyframes scroll-horizontal {
-        0% {
-            transform: translateX(100%);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
+        padding-top: 80px;
     }
 }
