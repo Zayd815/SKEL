@@ -15,7 +15,7 @@ body {
 /* Styles de navigation */
 header {
     background-color: #f8f9fa;
-    padding: 15px 20px; /* Ajusté pour réduire la taille sur mobile */
+    padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -43,9 +43,10 @@ nav ul li a:hover {
 /* Section Accueil */
 #accueil {
     text-align: center;
-    padding: 40px 20px; /* Réduit la distance entre les sections */
+    padding: 60px 20px;
     background-color: #e9ecef;
     overflow: hidden;
+    margin-top: 20px; /* Décale légèrement la section vers le bas */
 }
 
 #accueil img {
@@ -137,6 +138,7 @@ section p {
 /* Masquer le menu hamburger par défaut */
 .hamburger {
     display: none;
+    right: 20px;
     font-size: 30px;
     background: none;
     border: none;
@@ -171,16 +173,18 @@ section p {
 
 /* Adaptation du menu et espacement pour mobile */
 @media (max-width: 768px) {
-    /* Espacement pour décaler la section accueil vers le bas */
+    /* Décale la section accueil vers le bas */
     #accueil {
-        padding-top: 60px; /* Ajuste l'espace pour que le hamburger reste dans le blanc */
+        padding-top: 100px;
     }
 
-    /* Style pour intégrer le menu avec le header */
+    /* Supprime la partie grise sous le header */
     header {
         background-color: #ffffff;
-        padding: 15px 20px; /* réduit pour ajuster le hamburger */
+        padding: 15px;
         box-shadow: none;
+        position: relative;
+        z-index: 2;
     }
 
     .nav-links {
