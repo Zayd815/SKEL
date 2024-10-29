@@ -124,3 +124,72 @@ section p {
     text-align: center;
     color: #555;
 }
+
+/* Styles pour le menu classique sur les grands écrans */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/* Masquer le menu hamburger par défaut */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Adaptation du menu pour les écrans plus petits */
+@media (max-width: 1024px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #f8f9fa;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+}
+
+/* Adapter les sections pour mobile */
+@media (max-width: 768px) {
+    #accueil h1 {
+        font-size: 1.8rem;
+    }
+
+    #accueil p {
+        font-size: 1rem;
+    }
+
+    #accueil button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    /* Ajustement du carousel pour mobile */
+    .trusted-carousel {
+        flex-direction: column;
+        animation: none;
+    }
+
+    /* Ajuste la taille du logo pour les petits écrans */
+    #accueil img {
+        width: 200px;
+    }
+}
