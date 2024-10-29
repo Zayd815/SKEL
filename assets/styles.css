@@ -6,17 +6,18 @@
     font-family: Arial, sans-serif;
 }
 
-body {
+html, body {
+    overflow-x: hidden; /* Empêche le défilement horizontal */
     line-height: 1.6;
     color: #333;
-    overflow-x: hidden; /* Empêche le défilement horizontal */
 }
 
 /* Styles de navigation */
 header {
-    background-color: #f8f9fa;
+    background-color: #F8F9FA; /* Couleur du header */
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 nav ul {
@@ -151,7 +152,7 @@ section p {
         flex-direction: column;
         width: 100%;
         text-align: center;
-        background-color: #f8f9fa;
+        background-color: #F8F9FA;
         position: absolute;
         top: 60px;
         left: 0;
