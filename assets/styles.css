@@ -22,9 +22,9 @@ header {
     width: 100%;
     z-index: 1000;
     display: flex;
-    align-items: center; /* Centre verticalement les éléments dans le header */
+    align-items: center;
     justify-content: space-between;
-    height: 60px; /* Ajuste la hauteur du header */
+    height: 60px;
 }
 
 .logo-container {
@@ -33,7 +33,7 @@ header {
 }
 
 .logo {
-    width: 120px; /* Taille du logo pour PC */
+    width: 120px;
     margin-right: 20px;
 }
 
@@ -61,7 +61,7 @@ header {
     background: none;
     border: none;
     cursor: pointer;
-    align-self: center; /* Centre le hamburger verticalement dans le header */
+    align-self: center;
 }
 
 /* Section Accueil */
@@ -104,11 +104,12 @@ header {
 #trusted {
     padding: 40px 20px;
     text-align: center;
+    overflow-x: hidden; /* Empêche le défilement horizontal de la section */
 }
 
 #trusted h2 {
     font-size: 1.8rem;
-    margin-bottom: 25px; /* Ajuste la distance au-dessus du carousel */
+    margin-bottom: 25px;
 }
 
 .trusted-carousel {
@@ -116,6 +117,8 @@ header {
     justify-content: center;
     gap: 20px;
     animation: scroll 10s linear infinite;
+    overflow: hidden;
+    width: 100%;
 }
 
 .trusted-carousel span {
@@ -135,7 +138,7 @@ header {
 /* Styles pour mobile */
 @media (max-width: 768px) {
     .logo {
-        width: 100px; /* Taille du logo pour mobile */
+        width: 100px;
     }
 
     .nav-links {
@@ -155,13 +158,48 @@ header {
         display: flex;
     }
 
+    .nav-links li {
+        margin: 10px 0;
+    }
+
     .hamburger {
         display: block;
         position: absolute;
-        top: 50%; /* Centre verticalement */
+        top: 50%;
         right: 20px;
-        transform: translateY(-50%); /* Centre exactement dans la hauteur */
+        transform: translateY(-50%);
     }
+
+    #accueil {
+        padding-top: 80px;
+    }
+
+    #trusted {
+        padding: 40px 10px; /* Réduit légèrement le padding pour éviter le défilement */
+    }
+    
+    .trusted-carousel {
+        justify-content: flex-start;
+        animation: scroll-horizontal 10s linear infinite;
+        overflow: hidden;
+    }
+
+    .trusted-carousel span {
+        display: inline-block;
+        padding: 10px;
+        margin-right: 20px;
+        white-space: nowrap;
+    }
+
+    @keyframes scroll-horizontal {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+}
 
     #accueil {
         padding-top: 80px;
