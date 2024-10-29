@@ -214,3 +214,10 @@ section p {
 .nav-links li {
     margin: 15px 0; /* Adds more space between items */
 }
+
+@media (max-width: 768px) {
+    /* Espace supplémentaire pour la section d'accueil sur mobile */
+    #accueil {
+        padding-top: 60px; /* Ajustez la valeur selon vos besoins */
+    }
+}
