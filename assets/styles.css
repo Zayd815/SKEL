@@ -15,7 +15,7 @@ body {
 /* Styles de navigation */
 header {
     background-color: #f8f9fa;
-    padding: 25px;
+    padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -46,7 +46,7 @@ nav ul li a:hover {
     padding: 60px 20px;
     background-color: #e9ecef;
     overflow: hidden;
-    margin-top: 25px; /* Décale légèrement la section vers le bas */
+    margin-top: 20px; /* Décale légèrement la section vers le bas */
 }
 
 #accueil img {
@@ -180,8 +180,8 @@ section p {
 
     /* Supprime la partie grise sous le header */
     header {
-        background-color: #f8f9fa;
-        padding: 20px;
+        background-color: #ffffff;
+        padding: 15px;
         box-shadow: none;
         position: relative;
         z-index: 2;
