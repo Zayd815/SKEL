@@ -48,29 +48,3 @@ header h1 {
     color: #333;
     margin-bottom: 1rem;
 }
-
-.carousel {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    white-space: nowrap;
-    justify-content: center;
-    animation: scroll 10s linear infinite;
-}
-
-.carousel-item {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    margin: 0 1rem;
-    font-size: 1rem;
-    color: #555;
-    min-width: 150px;
-    text-align: center;
-}
-
-@keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-}
