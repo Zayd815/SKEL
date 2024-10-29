@@ -9,7 +9,7 @@
 body {
     line-height: 1.6;
     color: #333;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
 }
 
 /* Styles de navigation */
@@ -23,7 +23,6 @@ header {
     z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     height: 60px;
 }
 
@@ -31,6 +30,7 @@ header {
 .logo-container {
     display: flex;
     align-items: center;
+    margin-right: auto; /* Place le logo à gauche */
 }
 
 .logo {
@@ -41,8 +41,7 @@ header {
     list-style-type: none;
     display: flex;
     gap: 20px;
-    justify-content: center;
-    flex-grow: 1;
+    margin-left: auto;
 }
 
 .nav-links li {
@@ -119,7 +118,7 @@ header {
 .trusted-carousel {
     display: flex;
     gap: 40px;
-    animation: scroll 20s linear infinite;
+    animation: scroll 20s linear infinite; /* Défilement infini */
     overflow: hidden;
     white-space: nowrap;
 }
@@ -140,7 +139,7 @@ header {
 }
 
 .trusted-carousel:hover {
-    animation-play-state: paused;
+    animation-play-state: paused; /* Pause l'animation au survol */
 }
 
 /* Styles pour mobile */
