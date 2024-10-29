@@ -37,6 +37,24 @@ header {
     width: 120px;
 }
 
+/* Alignement pour mobile */
+@media (max-width: 768px) {
+    .logo-container {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+}
+
 .nav-links {
     list-style-type: none;
     display: flex;
@@ -139,48 +157,4 @@ header {
 
 .trusted-carousel:hover {
     animation-play-state: paused; /* Pause l'animation au survol */
-}
-
-/* Styles pour mobile */
-@media (max-width: 768px) {
-    .logo {
-        width: 100px;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: #f8f9fa;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        padding: 20px;
-        font-size: 1.2rem;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    .hamburger {
-        display: block;
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-    }
-
-    #accueil {
-        padding-top: 80px;
-    }
-
-    #trusted {
-        padding: 40px 10px;
-    }
 }
