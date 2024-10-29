@@ -180,7 +180,7 @@ section p {
 
     /* Supprime la partie grise sous le header */
     header {
-        background-color: #ffffff;
+        background-color: #f8f9fa;
         padding: 15px;
         box-shadow: none;
         position: relative;
