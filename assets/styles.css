@@ -135,6 +135,7 @@ section p {
 /* Masquer le menu hamburger par défaut */
 .hamburger {
     display: none;
+    right: 20px;
     font-size: 30px;
     background: none;
     border: none;
@@ -171,7 +172,7 @@ section p {
 @media (max-width: 768px) {
     /* Espacement pour décaler la section accueil vers le bas */
     #accueil {
-        padding-top: 120px;
+        padding-top: 100px;
     }
 
     /* Style pour intégrer le menu avec le header */
