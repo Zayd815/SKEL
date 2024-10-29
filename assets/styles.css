@@ -216,8 +216,14 @@ section p {
 }
 
 @media (max-width: 768px) {
-    /* Espace supplémentaire pour la section d'accueil sur mobile */
+    /* Ajouter un margin-top pour éloigner la section accueil du header sur mobile */
     #accueil {
-        padding-top: 40px; /* Ajustez la valeur selon vos besoins */
+        margin-top: 100px; /* Ajustez la valeur pour obtenir le décalage désiré */
+    }
+    
+    /* Assurez-vous que le header lui-même n'a pas de margin ou padding en bas */
+    header {
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 }
