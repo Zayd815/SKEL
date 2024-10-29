@@ -46,7 +46,7 @@ nav ul li a:hover {
     padding: 60px 20px;
     background-color: #e9ecef;
     overflow: hidden;
-    margin-top: 20px; /* Décale légèrement la section vers le bas */
+    margin-top: 25px; /* Décale légèrement la section vers le bas */
 }
 
 #accueil img {
@@ -180,7 +180,7 @@ section p {
 
     /* Supprime la partie grise sous le header */
     header {
-        background-color: #ffffff;
+        background-color: #f8f9fa;
         padding: 15px;
         box-shadow: none;
         position: relative;
