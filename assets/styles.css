@@ -178,7 +178,7 @@ section p {
     /* Style pour intégrer le menu avec le header */
     header {
         background-color: #ffffff;
-        padding: 20px;
+        padding: 15px;
         box-shadow: none;
     }
 
@@ -205,9 +205,9 @@ section p {
 
     .hamburger {
         font-size: 30px;
-        position: relative;
-        top: 0;
-        right: 20px;
+        position: absolute;
+        top: 15px;
+        right: 20px; /* Alignement à droite pour mobile */
     }
 
     /* Carousel horizontal pour mobile */
