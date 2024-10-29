@@ -27,6 +27,7 @@ header {
     height: 60px;
 }
 
+/* Logo et menu dans une ligne pour PC */
 .logo-container {
     display: flex;
     align-items: center;
@@ -41,6 +42,10 @@ header {
     list-style-type: none;
     display: flex;
     gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
 }
 
 .nav-links li a {
@@ -61,7 +66,6 @@ header {
     background: none;
     border: none;
     cursor: pointer;
-    align-self: center;
 }
 
 /* Section Accueil */
@@ -198,10 +202,5 @@ header {
         100% {
             transform: translateX(-100%);
         }
-    }
-}
-
-    #accueil {
-        padding-top: 80px;
     }
 }
