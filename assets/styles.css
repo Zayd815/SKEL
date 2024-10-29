@@ -24,25 +24,18 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
 }
 
 .logo {
     width: 120px;
+    margin-right: 20px;
 }
 
 .nav-links {
     list-style-type: none;
     display: flex;
-    justify-content: center; /* Centre le menu */
+    justify-content: center;
     gap: 20px;
-    flex: 1;
 }
 
 .nav-links li {
@@ -73,7 +66,7 @@ header {
 
 .trusted-carousel {
     display: flex;
-    gap: 40px;
+    gap: 30px;
     animation: scroll 20s linear infinite; /* Défilement cyclique */
     white-space: nowrap;
     overflow: hidden;
@@ -86,12 +79,13 @@ header {
     font-weight: bold;
     display: inline-block;
     white-space: nowrap;
+    min-width: 100px;
 }
 
 /* Animation pour le carousel cyclique */
 @keyframes scroll {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+    100% { transform: translateX(-50%); }
 }
 
 /* Styles pour mobile */
@@ -128,9 +122,4 @@ header {
         right: 20px;
         transform: translateY(-50%);
     }
-}
-
-/* Ajustement pour les bulles d'entreprises */
-.trusted-carousel span {
-    min-width: 100px; /* Largeur minimale pour afficher tout le texte */
 }
