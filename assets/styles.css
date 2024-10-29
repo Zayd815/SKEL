@@ -135,7 +135,7 @@ section p {
 /* Masquer le menu hamburger par défaut */
 .hamburger {
     display: none;
-    font-size: 24px;
+    font-size: 30px;
     background: none;
     border: none;
     cursor: pointer;
@@ -167,63 +167,70 @@ section p {
     }
 }
 
-/* Adapter les sections pour mobile */
+/* Adaptation du menu et espacement pour mobile */
 @media (max-width: 768px) {
-    #accueil h1 {
-        font-size: 1.8rem;
-    }
-
-    #accueil p {
-        font-size: 1rem;
-    }
-
-    #accueil button {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-
-    /* Ajustement du carousel pour mobile */
-    .trusted-carousel {
-        flex-direction: column;
-        animation: none;
-    }
-
-    /* Ajuste la taille du logo pour les petits écrans */
-    #accueil img {
-        width: 200px;
-    }
-    
-}
-/* For mobile navigation adjustments */
-.hamburger {
-    font-size: 30px; /* Increase the size of the hamburger icon */
-}
-
-.nav-links {
-    display: none; /* Hides the menu initially */
-    flex-direction: column;
-    align-items: flex-start; /* Aligns items to the left */
-    padding: 20px;
-    font-size: 1.2rem; /* Increases the font size for better spacing */
-}
-
-.nav-links.active {
-    display: flex;
-}
-
-.nav-links li {
-    margin: 15px 0; /* Adds more space between items */
-}
-
-@media (max-width: 768px) {
-    /* Ajouter un margin-top pour éloigner la section accueil du header sur mobile */
+    /* Espacement pour décaler la section accueil vers le bas */
     #accueil {
-        margin-top: 100px; /* Ajustez la valeur pour obtenir le décalage désiré */
+        padding-top: 120px;
     }
-    
-    /* Assurez-vous que le header lui-même n'a pas de margin ou padding en bas */
+
+    /* Style pour intégrer le menu avec le header */
     header {
-        margin-bottom: 0;
-        padding-bottom: 0;
+        background-color: #ffffff;
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        font-size: 30px;
+        position: relative;
+        top: 0;
+        right: 20px;
+    }
+
+    /* Carousel horizontal pour mobile */
+    .trusted-carousel {
+        display: flex;
+        justify-content: flex-start;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: scroll-horizontal 10s linear infinite;
+    }
+
+    .trusted-carousel span {
+        display: inline-block;
+        padding: 10px;
+        margin-right: 20px;
+        white-space: nowrap;
+    }
+
+    @keyframes scroll-horizontal {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
     }
 }
