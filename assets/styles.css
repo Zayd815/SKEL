@@ -41,7 +41,6 @@ header {
     list-style-type: none;
     display: flex;
     gap: 20px;
-    margin-left: 20px; /* Décale le menu à droite du logo */
 }
 
 .nav-links li {
