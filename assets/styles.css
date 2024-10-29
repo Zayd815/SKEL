@@ -15,7 +15,7 @@ body {
 /* Styles de navigation */
 header {
     background-color: #f8f9fa;
-    padding: 20px;
+    padding: 25px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -181,7 +181,7 @@ section p {
     /* Supprime la partie grise sous le header */
     header {
         background-color: #f8f9fa;
-        padding: 15px;
+        padding: 20px;
         box-shadow: none;
         position: relative;
         z-index: 2;
