@@ -140,20 +140,20 @@ header {
 
 #apropos h2 {
     font-size: 2.2rem;
-    margin-bottom: 40px; /* Augmente l'espace sous le titre principal */
+    margin-bottom: 55px; /* Augmente l'espace sous le titre principal */
 }
 
 .phrase-accroche {
     font-size: 1.3rem;
     font-style: italic;
-    margin-bottom: 35px; /* Augmente l'espace sous les phrases d'accroche */
+    margin-bottom: 45px; /* Augmente l'espace sous les phrases d'accroche */
 }
 
 .intro-sk p, .methodology-overview p, .methodology-overview ul {
     font-size: 1.1rem;
     max-width: 800px;
     margin: auto;
-    margin-bottom: 30px; /* Augmente l'espace entre chaque paragraphe et liste */
+    margin-bottom: 40px; /* Augmente l'espace entre chaque paragraphe et liste */
     line-height: 1.7;
 }
 
