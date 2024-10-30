@@ -30,7 +30,9 @@ header {
 /* Logo et menu dans une ligne pour PC */
 .logo-container {
     position: absolute;
+    top: 50%;
     left: 20px;
+    transform: translateY(-50%);
 }
 
 .logo {
