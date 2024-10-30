@@ -140,20 +140,20 @@ header {
 
 #apropos h2 {
     font-size: 2.2rem;
-    margin-bottom: 30px;
+    margin-bottom: 40px; /* Augmente l'espace sous le titre principal */
 }
 
 .phrase-accroche {
     font-size: 1.3rem;
     font-style: italic;
-    margin-bottom: 25px;
+    margin-bottom: 35px; /* Augmente l'espace sous les phrases d'accroche */
 }
 
 .intro-sk p, .methodology-overview p, .methodology-overview ul {
     font-size: 1.1rem;
     max-width: 800px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Augmente l'espace entre chaque paragraphe et liste */
     line-height: 1.7;
 }
 
@@ -163,7 +163,8 @@ header {
 
 .methodology-overview h3 {
     font-size: 1.8rem;
-    margin-bottom: 15px;
+    margin-top: 40px; /* Augmente l'espace au-dessus du sous-titre */
+    margin-bottom: 30px; /* Augmente l'espace sous le sous-titre */
 }
 
 .methodology-overview ul {
@@ -172,7 +173,7 @@ header {
 }
 
 .methodology-overview ul li {
-    margin: 10px 0;
+    margin: 20px 0; /* Augmente l'espace entre les éléments de la liste */
     padding: 10px;
     background-color: #d1e7dd;
     border-radius: 8px;
