@@ -174,16 +174,13 @@ header {
     .nav-links li {
         margin: 10px 0;
     }
-
-    .hamburger-container {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-    }
     
     .hamburger {
         display: block;
+        position: absolute;
+        top: 40%;
+        right: 20px;
+        transform: translateY(-50%);
     }
     
     #accueil {
