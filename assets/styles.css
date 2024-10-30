@@ -129,15 +129,111 @@ header {
     padding: 60px 20px;
 }
 
+/* Section À propos */
+#apropos {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+#apropos h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.phrase-accroche {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.intro-sk p, .methodology-overview p, .methodology-overview ul {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.methodology-overview {
+    margin-top: 30px;
+}
+
+.methodology-overview h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.methodology-overview ul {
+    list-style: none;
+    padding: 0;
+}
+
+.methodology-overview ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #d1e7dd;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Bulles et stats */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.stat-box {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 170px;
+    text-align: center;
+}
+
+.stat-box .icon {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.stat-box p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Bouton d'appel à l'action */
+#apropos button {
+    margin-top: 30px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#apropos button:hover {
+    background-color: #0056b3;
+}
+
 /* Styles pour mobile */
 @media (max-width: 768px) {
-   .logo-container {
+    .logo-container {
         position: absolute;
         top: 55%;
         left: 20px;
         transform: translateY(-50%);
     } 
-    
+
     .logo {
         width: 100px;
     }
@@ -162,7 +258,7 @@ header {
     .nav-links li {
         margin: 10px 0;
     }
-    
+
     .hamburger {
         display: block;
         position: absolute;
@@ -170,7 +266,7 @@ header {
         right: 20px;
         transform: translateY(-50%);
     }
-    
+
     #accueil {
         padding-top: 80px;
     }
@@ -178,198 +274,11 @@ header {
     #trusted {
         padding: 40px 10px;
     }
-}
 
-#apropos {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #f9f9f9;
-}
-
-#apropos h2 {
-    font-size: 2.2rem;
-    margin-bottom: 15px;
-}
-
-.intro-sk p {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.methodology-overview {
-    margin-top: 30px;
-}
-
-.methodology-overview h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-}
-
-.methodology-overview p, .methodology-overview ul {
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.methodology-overview ul {
-    list-style: none;
-    padding: 0;
-}
-
-.methodology-overview ul li {
-    margin: 10px 0;
-    padding: 10px;
-    background-color: #e0f7fa;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-.stats {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 40px;
-}
-
-.stat-box {
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    width: 150px;
-    text-align: center;
-}
-
-.stat-box .icon {
-    font-size: 2rem;
-    color: #007bff;
-}
-
-.stat-box p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-#apropos button {
-    margin-top: 30px;
-    padding: 12px 24px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#apropos button:hover {
-    background-color: #0056b3;
-}
-
-/* Section À propos */
-#apropos {
-    padding: 80px 20px;
-    text-align: center;
-    background-color: #f9f9f9;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-#apropos h2 {
-    font-size: 2.2rem;
-    margin-bottom: 25px;
-}
-
-.intro-sk p {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.methodology-overview {
-    margin-top: 30px;
-}
-
-.methodology-overview h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-}
-
-.methodology-overview p, .methodology-overview ul {
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.methodology-overview ul {
-    list-style: none;
-    padding: 0;
-}
-
-.methodology-overview ul li {
-    margin: 10px 0;
-    padding: 10px;
-    background-color: #d1e7dd;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-/* Bulles avec ajustement de texte et ombrage */
-.stats {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 40px;
-}
-
-.stat-box {
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    width: 170px;
-    text-align: center;
-}
-
-.stat-box .icon {
-    font-size: 2rem;
-    color: #007bff;
-}
-
-.stat-box p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-#apropos button {
-    margin-top: 30px;
-    padding: 12px 24px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#apropos button:hover {
-    background-color: #0056b3;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
     #apropos h2 {
         font-size: 1.8rem;
     }
+
     .stat-box {
         width: 100%;
     }
