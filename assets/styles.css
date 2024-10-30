@@ -175,14 +175,17 @@ header {
         margin: 10px 0;
     }
 
-    .hamburger {
-        display: block;
+    .hamburger-container {
         position: absolute;
         top: 50%;
         right: 20px;
         transform: translateY(-50%);
     }
-
+    
+    .hamburger {
+        display: block;
+    }
+    
     #accueil {
         padding-top: 80px;
     }
