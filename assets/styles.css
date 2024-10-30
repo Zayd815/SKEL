@@ -30,7 +30,7 @@ header {
 /* Logo et menu dans une ligne pour PC */
 .logo-container {
     position: absolute;
-    top: 50%;
+    top: 51%;
     left: 20px;
     transform: translateY(-50%);
 }
@@ -147,7 +147,7 @@ header {
 @media (max-width: 768px) {
    .logo-container {
         position: absolute;
-        top: 50%;
+        top: 55%;
         left: 20px;
         transform: translateY(-50%);
     } 
@@ -180,7 +180,7 @@ header {
     .hamburger {
         display: block;
         position: absolute;
-        top: 40%;
+        top: 46%;
         right: 20px;
         transform: translateY(-50%);
     }
