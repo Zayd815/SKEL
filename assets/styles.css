@@ -162,6 +162,10 @@ header {
     margin: 0 50px
 }
 
+.hidden {
+    display: none;
+}
+
 /* Styles pour le CTA sous le carousel */
 #cta {
     text-align: center;
