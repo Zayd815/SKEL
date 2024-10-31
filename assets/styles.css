@@ -175,6 +175,12 @@ header {
        transition: opacity 0.5s ease-in-out;
 }
 
+@media (max-width: 768px) {
+    #cta {
+        margin-top: 0px; /* Ajustez la valeur pour rapprocher le CTA des logos */
+    }
+}
+
 #cta.hidden {
     opacity: 0;
     display: block; /* S'assure que l'élément prend de la place même caché */
