@@ -147,6 +147,11 @@ header {
     width: calc(200px * 10); /* Ajustez 200px pour correspondre à la largeur de chaque logo, et multipliez par le nombre total d'éléments (y compris les duplicatas) */
 }
 
+.trusted-carousel .slide img {
+    width: 100px; /* Ajustez la largeur selon vos besoins */
+    height: auto; /* Maintient les proportions de l'image */
+}
+
 .trusted-carousel .slide {
     flex: 0 0 200px; /* Ajustez pour correspondre à la largeur de chaque logo */
     padding: 10px;
