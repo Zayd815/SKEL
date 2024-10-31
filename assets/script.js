@@ -21,7 +21,7 @@ window.addEventListener('scroll', function() {
     const aproposTitlePosition = aproposTitle.getBoundingClientRect().top;
 
     // Vérifiez si le titre est sur le point d'entrer dans la vue
-    if (aproposTitlePosition <= window.innerHeight - headerHeight + 50) {
+    if (aproposTitlePosition <= window.innerHeight - headerHeight + 200) {
         cta.classList.remove('hidden');
     } else {
         cta.classList.add('hidden');
