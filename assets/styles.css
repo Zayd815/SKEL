@@ -109,24 +109,43 @@ header {
     background-color: #0056b3;
 }
 
-/* Carousel ajusté */
-.trusted-carousel {
-    display: flex;
-    gap: 40px;
-    animation: scroll 10s linear infinite;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-@keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-}
-
 /* Section "Ils nous font confiance" */
 #trusted h2 {
     font-size: 1.6rem;
     margin-bottom: 20px;
+}
+
+/* Carousel avec défilement infini */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 5)); /* Ajustez 200px pour correspondre à la largeur de chaque logo */
+    }
+}
+
+.trusted-carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.trusted-carousel .slide-track {
+    display: flex;
+    animation: scroll 20s linear infinite; /* Ajustez la durée pour modifier la vitesse */
+    width: calc(200px * 10); /* Ajustez 200px pour correspondre à la largeur de chaque logo, et multipliez par le nombre total d'éléments (y compris les duplicatas) */
+}
+
+.trusted-carousel .slide {
+    flex: 0 0 200px; /* Ajustez pour correspondre à la largeur de chaque logo */
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #f1f1f1;
+    border-radius: 8px;
 }
 
 #trusted {
