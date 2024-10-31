@@ -177,7 +177,9 @@ header {
 
 @media (max-width: 768px) {
     #cta {
-        margin-top: -10px; /* Ajustez la valeur pour rapprocher le CTA des logos */
+        position: relative;
+        top: -10px; /* Ajustez cette valeur pour déplacer le CTA vers le haut */
+        margin-top: 0; /* Assurez-vous que la marge soit à 0 */
     }
 }
 
