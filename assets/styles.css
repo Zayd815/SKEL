@@ -109,10 +109,18 @@ header {
     background-color: #0056b3;
 }
 
+#trusted {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 /* Section "Ils nous font confiance" */
 #trusted h2 {
     font-size: 1.6rem;
     margin-bottom: 20px;
+    text-align: center; /* Centre le texte */
 }
 
 /* Carousel avec défilement infini */
@@ -155,8 +163,31 @@ header {
     font-weight: bold;
 }
 
-#trusted {
-    padding: 60px 20px;
+/* Styles pour le CTA sous le carousel */
+#cta {
+    text-align: center;
+    margin: 40px 0; /* Ajuste l'espacement au-dessus et en dessous du CTA */
+}
+
+#cta {
+    margin-top: 40px; /* Distance entre le carousel et le CTA */
+    margin-bottom: 40px; /* Distance entre le CTA et la section À propos */
+}
+
+#cta button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s;
+}
+
+#cta button:hover {
+    background-color: #0056b3;
 }
 
 /* Section À propos */
