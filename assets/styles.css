@@ -74,7 +74,7 @@ header {
     text-align: center;
     padding: 60px 20px;
     background-color: #e9ecef;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Ajout de l'ombrage */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajout de l'ombrage */
     margin-bottom: 40px; /* Espace en dessous */
 }
 
@@ -137,7 +137,7 @@ header {
     padding: 80px 20px;
     text-align: center;
     background-color: #f9f9f9;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
 }
 
@@ -214,7 +214,7 @@ header {
 
 /* Bouton d'appel à l'action */
 #apropos button {
-    margin-top: 40px; /* Ajuste la marge pour descendre le bouton */
+    margin-top: 50px; /* Ajuste la marge pour descendre le bouton */
     padding: 12px 24px;
     font-size: 1rem;
     color: #fff;
