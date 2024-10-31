@@ -242,7 +242,7 @@ header {
 
 .methodology-overview h3 {
     font-size: 1.8rem;
-    margin-top: 40px; /* Augmente l'espace au-dessus du sous-titre */
+    margin-top: -10px; /* Augmente l'espace au-dessus du sous-titre */
     margin-bottom: 30px; /* Augmente l'espace sous le sous-titre */
 }
 
