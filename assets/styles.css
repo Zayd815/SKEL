@@ -168,9 +168,20 @@ header {
 
 /* Styles pour le CTA sous le carousel */
 #cta {
-    text-align: center;
-    margin-top: 20px; /* Distance entre le carousel et le CTA */
-    margin-bottom: 70px; /* Distance entre le CTA et la section À propos */
+       text-align: center;
+       margin-top: 10px; /* Distance entre le carousel et le CTA */
+       margin-bottom: 70px; /* Distance entre le CTA et la section À propos */
+       opacity: 0;
+       transition: opacity 0.5s ease-in-out;
+}
+
+#cta.hidden {
+    opacity: 0;
+    display: block; /* S'assure que l'élément prend de la place même caché */
+}
+
+#cta:not(.hidden) {
+    opacity: 1;
 }
 
 #cta button {
