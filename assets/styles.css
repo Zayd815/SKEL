@@ -148,6 +148,13 @@ header {
     border-radius: 8px;
 }
 
+.trusted-carousel span {
+    display: inline-block;
+        margin: 0 70px; /* Ajustez la valeur pour augmenter ou diminuer l'espacement */
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
 #trusted {
     padding: 60px 20px;
 }
