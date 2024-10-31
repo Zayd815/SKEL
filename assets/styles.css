@@ -16,7 +16,7 @@ body {
 header {
     background-color: #f8f9fa;
     padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
     width: 100%;
@@ -74,7 +74,7 @@ header {
     text-align: center;
     padding: 60px 20px;
     background-color: #e9ecef;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajout de l'ombrage */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Ajout de l'ombrage */
     margin-bottom: 40px; /* Espace en dessous */
 }
 
@@ -138,7 +138,7 @@ header {
     padding: 60px 20px;
     text-align: center;
     background-color: #f9f9f9;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 40px;
 }
 
