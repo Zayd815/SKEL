@@ -110,8 +110,8 @@ header {
 }
 
 #trusted {
-    padding-top: 60px;
-    padding-bottom: 20px;
+    padding-top: 18px;
+    padding-bottom: 0px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -119,7 +119,7 @@ header {
 /* Section "Ils nous font confiance" */
 #trusted h2 {
     font-size: 1.4rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center; /* Centre le texte */
 }
 
@@ -148,7 +148,7 @@ header {
 }
 
 .trusted-carousel .slide img {
-    width: 100px; /* Ajustez la largeur selon vos besoins */
+    width: 200px; /* Ajustez la largeur selon vos besoins */
     height: auto; /* Maintient les proportions de l'image */
 }
 
@@ -157,26 +157,16 @@ header {
     padding: 10px;
     text-align: center;
     font-weight: bold;
-    background-color: #f1f1f1;
+    background-color: transparent;
     border-radius: 8px;
-}
-
-.trusted-carousel span {
-    display: inline-block;
-        margin: 0 70px; /* Ajustez la valeur pour augmenter ou diminuer l'espacement */
-    font-size: 1.1rem;
-    font-weight: bold;
+    margin: 0 50px
 }
 
 /* Styles pour le CTA sous le carousel */
 #cta {
     text-align: center;
-    margin: 40px 0; /* Ajuste l'espacement au-dessus et en dessous du CTA */
-}
-
-#cta {
-    margin-top: 40px; /* Distance entre le carousel et le CTA */
-    margin-bottom: 40px; /* Distance entre le CTA et la section À propos */
+    margin-top: 20px; /* Distance entre le carousel et le CTA */
+    margin-bottom: 70px; /* Distance entre le CTA et la section À propos */
 }
 
 #cta button {
@@ -197,7 +187,7 @@ header {
 
 /* Section À propos */
 #apropos {
-    padding: 90px 20px;
+    padding: 70px 20px;
     text-align: center;
     background-color: #f9f9f9;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
