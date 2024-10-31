@@ -290,7 +290,7 @@ header {
 
 /* Bouton d'appel à l'action */
 #apropos button {
-    margin-top: 50px; /* Ajuste la marge pour descendre le bouton */
+    margin-top: 40px; /* Ajuste la marge pour descendre le bouton */
     padding: 12px 24px;
     font-size: 1rem;
     color: #fff;
