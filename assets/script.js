@@ -14,14 +14,14 @@ document.querySelectorAll('.nav-links li a').forEach(link => {
 
 window.addEventListener('scroll', function() {
     const cta = document.getElementById('cta');
+    const aproposTitle = document.querySelector('#apropos h2'); // Sélection du titre "À propos / Notre Mission"
     const headerHeight = document.querySelector('header').offsetHeight;
-    const ctaDiscover = document.querySelector('#accueil button');
 
-    // Obtenez la position de défilement de la page et la position du CTA "Découvrir nos services"
-    const ctaDiscoverPosition = ctaDiscover.getBoundingClientRect().bottom;
+    // Obtenez la position de défilement de la page et la position du titre "À propos / Notre Mission"
+    const aproposTitlePosition = aproposTitle.getBoundingClientRect().top;
 
-    // Vérifiez si le header recouvre totalement le CTA "Découvrir nos services"
-    if (ctaDiscoverPosition <= headerHeight) {
+    // Vérifiez si le titre est sur le point d'entrer dans la vue
+    if (aproposTitlePosition <= window.innerHeight - headerHeight) {
         cta.classList.remove('hidden');
     } else {
         cta.classList.add('hidden');
